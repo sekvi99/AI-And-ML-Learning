@@ -10,3 +10,4 @@ __pycache__
 *.egg
 *.egg-info
 *.dist-info
+chrome_langchain_db

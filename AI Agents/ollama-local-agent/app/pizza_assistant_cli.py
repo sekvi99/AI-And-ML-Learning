@@ -23,7 +23,7 @@ class PizzaAssistantCLI(BaseModel):
                 break
 
             # Retrieve relevant reviews using the vector store retriever
-            docs = retriever.get_relevant_documents(question)
+            docs = retriever.invoke(question)
             reviews: List[str] = [doc.page_content for doc in docs]
 
             result = self.assistant.answer_question(question, reviews)

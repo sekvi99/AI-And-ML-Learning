@@ -8,7 +8,7 @@ class PizzaAssistant(BaseModel):
     Handles the language model and prompt chain for answering pizza restaurant questions.
     """
     model_name: str = "llama3.2"
-    temperature: float = 0.1
+    temperature: float = 1
 
     def setup_chain(self) -> Any:
         """
